@@ -1,0 +1,29 @@
+PortSystem          1.0
+
+name                tabby_build_langs
+version             2026-08-12
+revision            0
+categories          devel
+supported_archs     noarch
+license             permissive
+maintainers         nomaintainer
+description         Meta-port pinning common build-time-dep languages as non-leaves
+long_description     ${description}
+
+homepage            https://github.com/stupidpupil/tabby_ports
+distfiles
+
+depends_run-append \
+                    port:go \
+                    port:perl5 \
+                    port:python314 \
+                    port:rust
+
+
+use_configure       no
+build {}
+destroot {
+    xinstall -d ${destroot}${prefix}/share/doc/${name}
+    xinstall -m 644 -W ${filespath} portfile.trace \
+        ${destroot}${prefix}/share/doc/${name} 2>/dev/null
+}

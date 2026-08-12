@@ -1,0 +1,27 @@
+PortSystem          1.0
+
+name                tabby_gis
+version             2026-08-12
+revision            0
+categories          gis
+supported_archs     noarch
+license             permissive
+maintainers         nomaintainer
+description         Meta-port for stuff I usually need for R/sf
+long_description     ${description}
+
+homepage            https://github.com/stupidpupil/tabby_ports
+distfiles
+
+depends_run-append \
+                    port:gdal \
+                    port:proj \
+                    port:geos
+
+use_configure       no
+build {}
+destroot {
+    xinstall -d ${destroot}${prefix}/share/doc/${name}
+    xinstall -m 644 -W ${filespath} portfile.trace \
+        ${destroot}${prefix}/share/doc/${name} 2>/dev/null
+}
