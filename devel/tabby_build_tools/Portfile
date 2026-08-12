@@ -2,7 +2,7 @@ PortSystem          1.0
 
 name                tabby_build_tools
 version             2026-08-12
-revision            0
+revision            3
 categories          devel
 supported_archs     noarch
 license             permissive
@@ -40,6 +40,5 @@ use_configure       no
 build {}
 destroot {
     xinstall -d ${destroot}${prefix}/share/doc/${name}
-    xinstall -m 644 -W ${filespath} portfile.trace \
-        ${destroot}${prefix}/share/doc/${name} 2>/dev/null
+    touch ${destroot}${prefix}/share/doc/${name}/${name}
 }
