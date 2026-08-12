@@ -2,7 +2,7 @@ PortSystem          1.0
 
 name                tabby_build_tools
 version             2026-08-12
-revision            3
+revision            4
 categories          devel
 supported_archs     noarch
 license             permissive
