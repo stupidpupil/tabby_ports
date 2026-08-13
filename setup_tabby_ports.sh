@@ -15,7 +15,7 @@ set -euo pipefail
 REPO_URL="https://github.com/stupidpupil/tabby_ports.git"
 REPO_DIR="/opt/local/var/macports/github.com/stupidpupil/tabby_ports"
 SOURCES_CONF="/opt/local/etc/macports/sources.conf"
-SOURCE_LINE="file:////opt/local/var/macports/github.com/stupidpupil/tabby_ports"
+SOURCE_LINE="file://$REPO_DIR"
 OWNER_USER="macports"
 OWNER_GROUP="macports"
 
