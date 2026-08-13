@@ -1,8 +1,8 @@
 PortSystem          1.0
 
 name                tabby_build_langs
-version             2026-08-12
-revision            3
+version             2026-08-13
+revision            0
 categories          devel
 supported_archs     noarch
 license             permissive

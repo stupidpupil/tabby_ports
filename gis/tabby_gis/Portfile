@@ -1,8 +1,8 @@
 PortSystem          1.0
 
 name                tabby_gis
-version             2026-08-12
-revision            3
+version             2026-08-13
+revision            0
 categories          gis
 supported_archs     noarch
 license             permissive
