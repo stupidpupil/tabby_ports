@@ -2,7 +2,7 @@ PortSystem          1.0
 
 name                tabby_build_tools
 version             2026-08-14
-revision            1
+revision            2
 categories          devel
 supported_archs     noarch
 license             permissive
@@ -37,6 +37,7 @@ depends_run-append \
                     port:libgit2 \
                     port:pkgconfig \
                     port:yasm \
+                    port:tabby_build_doc_tools \
                     port:tabby_build_langs \
                     port:tabby_compilers
 
