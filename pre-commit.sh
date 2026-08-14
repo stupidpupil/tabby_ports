@@ -10,6 +10,8 @@ if [[ -z $CHANGED_FILES ]]; then
   exit 0
 fi
 
+PORT_LINT_FAILED=0
+
 while IFS= read -r line ; do
 
   PORTFILE_PATH="$line"
@@ -22,7 +24,6 @@ while IFS= read -r line ; do
 
   echo "$(tput bold)$PORTDIR_PATH $(tput sgr0)"
 
-  PORT_LINT_FAILED=0
   PORT_LINT_OUTPUT=$(port lint -q "$PORTDIR_PATH" 2>&1)
 
   if [[ -z "$PORT_LINT_OUTPUT" ]]; then
