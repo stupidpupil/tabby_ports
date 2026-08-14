@@ -1,7 +1,7 @@
 PortSystem          1.0
 
 name                tabby_build_langs
-version             2026-08-13
+version             2026-08-14
 revision            0
 categories          devel
 supported_archs     noarch
@@ -17,7 +17,10 @@ depends_run-append \
                     port:go \
                     port:perl5 \
                     port:python314 \
-                    port:rust
+                    port:rust \
+                    port:cargo \
+                    port:ghc \
+                    port:sbcl
 
 
 use_configure       no

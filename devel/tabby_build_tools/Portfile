@@ -21,15 +21,20 @@ depends_run-append \
                     port:boost188 \
                     port:cmake \
                     port:cctools \
+                    port:doxygen \
                     port:flex \
                     port:libtool \
                     port:m4 \
                     port:meson \
                     port:nasm \
                     port:ninja \
+                    port:file \
                     port:gawk \
+                    port:grep \
                     port:gettext \
                     port:git \
+                    port:gmake \
+                    port:gsed \
                     port:libgit2 \
                     port:pkgconfig \
                     port:texinfo \
