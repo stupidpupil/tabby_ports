@@ -21,7 +21,6 @@ depends_run-append \
                     port:boost188 \
                     port:cmake \
                     port:cctools \
-                    port:doxygen \
                     port:flex \
                     port:libtool \
                     port:m4 \
@@ -37,7 +36,6 @@ depends_run-append \
                     port:gsed \
                     port:libgit2 \
                     port:pkgconfig \
-                    port:texinfo \
                     port:yasm \
                     port:tabby_build_langs \
                     port:tabby_compilers

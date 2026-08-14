@@ -1,0 +1,26 @@
+PortSystem          1.0
+
+name                tabby_other_lang_deps
+version             2026-08-14
+revision            0
+categories          devel
+supported_archs     noarch
+license             permissive
+maintainers         nomaintainer
+description         Meta-port pinning libraries I often need for R, Ruby, etc.
+long_description     ${description}
+
+homepage            https://github.com/stupidpupil/tabby_ports
+distfiles
+
+depends_run-append  port:libyaml \
+                    port:libxml2 \
+                    port:pandoc
+
+
+use_configure       no
+build {}
+destroot {
+    xinstall -d ${destroot}${prefix}/share/doc/${name}
+    touch ${destroot}${prefix}/share/doc/${name}/${name}
+}

@@ -1,0 +1,27 @@
+PortSystem          1.0
+
+name                tabby_build_doc_tools
+version             2026-08-14
+revision            0
+categories          devel
+supported_archs     noarch
+license             permissive
+maintainers         nomaintainer
+description         Meta-port pinning common build-time documentation tools as non-leaves
+long_description     ${description}
+
+homepage            https://github.com/stupidpupil/tabby_ports
+distfiles
+
+depends_run-append  port:doxygen \
+                    port:xmlto \
+                    port:asciidoc \
+                    port:texinfo
+
+
+use_configure       no
+build {}
+destroot {
+    xinstall -d ${destroot}${prefix}/share/doc/${name}
+    touch ${destroot}${prefix}/share/doc/${name}/${name}
+}
