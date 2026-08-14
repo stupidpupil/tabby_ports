@@ -1,7 +1,7 @@
 PortSystem          1.0
 
 name                tabby_gis
-version             2026-08-13
+version             2026-08-14
 revision            0
 categories          gis
 supported_archs     noarch
@@ -16,7 +16,8 @@ distfiles
 depends_run-append \
                     port:gdal \
                     port:proj \
-                    port:geos
+                    port:geos \
+                    port:osmium-tool
 
 use_configure       no
 build {}
