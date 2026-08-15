@@ -1,7 +1,7 @@
 PortSystem          1.0
 
 name                tabby_other_lang_deps
-version             2026-08-14
+version             2026-08-15
 revision            0
 categories          devel
 supported_archs     noarch
@@ -15,7 +15,10 @@ distfiles
 
 depends_run-append  port:libyaml \
                     port:libxml2 \
-                    port:pandoc
+                    port:pandoc \
+                    port:sqlite3 \
+                    port:abseil \
+                    port:pkgconfig
 
 
 use_configure       no
