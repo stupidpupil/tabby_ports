@@ -2,7 +2,7 @@ PortSystem          1.0
 
 name                tabby_build_langs
 version             2026-08-17
-revision            0
+revision            1
 categories          devel
 supported_archs     noarch
 license             permissive
@@ -21,6 +21,7 @@ depends_run-append \
                     port:rust \
                     port:cargo \
                     port:ghc \
+                    port:cabal \
                     port:sbcl
 
 
